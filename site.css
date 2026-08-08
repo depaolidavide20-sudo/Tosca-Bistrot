@@ -4580,6 +4580,15 @@ body {
   height: clamp(3.25rem, 4.4vw, 4.6rem) !important;
 }
 
+@media (min-width: 761px) {
+  .site-header .brand-logo-image {
+    height: clamp(4.15rem, 5.25vw, 5.75rem) !important;
+    justify-self: start;
+    margin-left: clamp(0.15rem, 0.8vw, 0.85rem);
+    transform: translateY(0.08rem);
+  }
+}
+
 .card-header .brand-logo-image {
   height: clamp(3.8rem, 5.4vw, 5.1rem) !important;
 }
