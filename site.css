@@ -4607,3 +4607,40 @@ body {
     height: 3.2rem !important;
   }
 }
+
+/* Mobile-specific hero and logo placement */
+@media (max-width: 760px) {
+  .site-header {
+    grid-template-columns: auto 1fr auto !important;
+    align-items: center;
+  }
+
+  .site-header .header-brand-mark {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .site-header .brand-logo-image {
+    height: 3rem !important;
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+
+  .site-header .brand-logo-image .brand-logo-img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .header-actions {
+    grid-column: 3;
+    justify-self: end;
+  }
+
+  .hero-picture {
+    background-image: url("assets/hero-mobile.jpg");
+  }
+
+  .hero-image {
+    object-position: center center;
+  }
+}
