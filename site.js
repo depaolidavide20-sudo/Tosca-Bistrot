@@ -195,39 +195,68 @@ const menuCatalogs = {
   food: {
     intro: {
       it: {
-        kicker: "Tosca Bistrot · Cucina ligure",
-        title: "Il nostro<br><em>menù.</em>",
-        description: "Pasta fresca, pesce, piatti liguri e dolci artigianali. La carta può variare secondo stagione e disponibilità.",
+        kicker: "Tosca · Piatti fatti in casa",
+        title: "Piatti fatti<br><em>in casa.</em>",
+        description: "Nel cuore delle Cinque Terre, Tosca propone una cucina italiana autentica ispirata alla tradizione ligure: pasta fresca preparata a mano, ingredienti locali, pesce e dolci artigianali.",
       },
       en: {
-        kicker: "Tosca Bistrot · Ligurian cuisine",
-        title: "Our<br><em>menu.</em>",
-        description: "Fresh pasta, seafood, Ligurian dishes and homemade desserts. The menu may vary according to season and availability.",
+        kicker: "Tosca · Homemade dishes",
+        title: "Homemade<br><em>dishes.</em>",
+        description: "In the heart of the Cinque Terre, Tosca offers authentic Italian cuisine inspired by Ligurian tradition: handmade fresh pasta, local ingredients, seafood and homemade desserts.",
       },
     },
     sections: [
       {
         it: "Antipasti", en: "Starters",
         items: [
-          { it: "Tris di acciughe alla ligure", en: "Ligurian anchovy trio" },
-          { it: "Polpo con patate e profumi mediterranei", en: "Octopus with potatoes and Mediterranean herbs" },
-          { it: "Baccalà mantecato e crostini", en: "Creamed cod with toasted bread" },
+          { it: "Tris di acciughe", en: "Anchovy trio", subIt: "Acciughe marinate, salate, in carpione", subEn: "Marinated, salted and carpione anchovies", price: "€17" },
+          { it: "Polpo e patate", en: "Octopus and potatoes", subIt: "Polpo, patate, olive taggiasche, pomodorini, emulsione al prezzemolo", subEn: "Octopus, potatoes, Taggiasca olives, cherry tomatoes, parsley emulsion", price: "€19" },
+          { it: "Baccalà mantecato", en: "Creamed salt cod", subIt: "Quenelle di baccalà mantecato, sfoglia di pane croccante, pomodorini confit", subEn: "Creamed salt cod quenelle, crisp bread wafer, confit cherry tomatoes", price: "€17" },
+          { it: "Muscoli alla marinara", en: "Mussels marinara", subIt: "Cozze del golfo di La Spezia alla marinara", subEn: "Mussels from the Gulf of La Spezia cooked marinara-style", price: "€18" },
+          { it: "Caprese di burrata", en: "Burrata caprese", subIt: "Burrata, pomodori freschi, pesto fatto in casa", subEn: "Burrata, fresh tomatoes, homemade pesto", price: "€17" },
         ],
       },
       {
         it: "Pasta fatta in casa", en: "Homemade pasta",
         items: [
-          { it: "Trenette con acciughe, burro e limone", en: "Trenette with anchovies, butter and lemon" },
-          { it: "Gnocchi con calamari e pomodorini", en: "Gnocchi with squid and cherry tomatoes" },
-          { it: "Trenette al pesto con patate e fagiolini", en: "Trenette with pesto, potatoes and green beans" },
+          { it: "Trenette acciughe, burro e limone", en: "Trenette with anchovies, butter and lemon", price: "€18" },
+          { it: "Gnocchi fatti a mano con calamari, pomodorini, capperi e peperoncino", en: "Handmade gnocchi with squid, cherry tomatoes, capers and chilli", price: "€21" },
+          { it: "Spaghetti allo scoglio", en: "Seafood spaghetti", price: "€22" },
+          { it: "Spaghetti cacio e pepe con tartare di gamberi", en: "Cacio e pepe spaghetti with prawn tartare", price: "€22" },
+          { it: "Trenette alle vongole veraci", en: "Trenette with clams", price: "€22" },
+          { it: "Trenette al pesto", en: "Trenette with pesto", price: "€17" },
+          { it: "Spaghetti al ragù", en: "Spaghetti with ragù", price: "€17" },
         ],
       },
       {
-        it: "Secondi e dolci", en: "Mains and desserts",
+        it: "Secondi piatti", en: "Main courses",
         items: [
-          { it: "Filetto di pesce del giorno alla ligure", en: "Ligurian-style fish fillet of the day" },
-          { it: "Polpo croccante con burrata e pomodorini", en: "Crispy octopus with burrata and cherry tomatoes" },
-          { it: "Tiramisù di Tosca", en: "Tosca tiramisu" },
+          { it: "Filetto di pesce del giorno alla ligure", en: "Ligurian-style fish fillet of the day", price: "€27" },
+          { it: "Baccalà con crema di ceci e pomodori secchi", en: "Salt cod with chickpea cream and sun-dried tomatoes", price: "€25" },
+          { it: "Polpo croccante, burrata, pomodori confit", en: "Crispy octopus, burrata, confit tomatoes", price: "€27" },
+          { it: "Calamaro scottato, guanciale croccante, crema di piselli", en: "Seared squid, crispy guanciale, pea cream", price: "€25" },
+          { it: "Vitello tonnato", en: "Veal with tuna sauce", price: "€24" },
+          { it: "Parmigiana di melanzane", en: "Aubergine parmigiana", price: "€18" },
+        ],
+      },
+      {
+        it: "Contorni", en: "Side dishes",
+        items: [
+          { it: "Patate, fagiolini, pesto", en: "Potatoes, green beans, pesto", price: "€9" },
+          { it: "Insalata mista con pomodorini e carote", en: "Mixed salad with cherry tomatoes and carrots", price: "€8" },
+          { it: "Patate arrosto", en: "Roast potatoes", price: "€8" },
+          { it: "Verdure grigliate", en: "Grilled vegetables", price: "€9" },
+        ],
+      },
+      {
+        it: "Le dolcezze di Tosca", en: "Tosca desserts",
+        items: [
+          { it: "Delizia al limone", en: "Lemon delight", subIt: "Ganache al limone e cioccolato bianco con ricotta e mandorle sabbiate", subEn: "Lemon and white chocolate ganache with ricotta and sugared almonds", price: "€10" },
+          { it: "Pinolata ligure", en: "Ligurian pine-nut tart", subIt: "Crostata tipica con pinoli, mandorle e meringa", subEn: "Traditional tart with pine nuts, almonds and meringue", price: "€11" },
+          { it: "Tiramisù di Tosca", en: "Tosca tiramisu", price: "€10" },
+          { it: "Cremoso al pistacchio con frutti di bosco", en: "Pistachio cream with berries", price: "€11" },
+          { it: "Panna cotta al cioccolato", en: "Chocolate panna cotta", price: "€9" },
+          { it: "Sciacchetrà con biscottini della casa", en: "Sciacchetrà with house biscuits", price: "€12" },
         ],
       },
     ],
@@ -237,37 +266,37 @@ const menuCatalogs = {
       it: {
         kicker: "Tosca Bistrot · La cantina",
         title: "Carta<br><em>dei Vini.</em>",
-        description: "Una selezione pensata per pasta fresca, pesce e cucina ligure, con spazio ai bianchi della Riviera e alle etichette nazionali.",
+        description: "La carta dei vini valorizza i produttori locali delle Cinque Terre ed è completata da piccole aziende familiari delle regioni italiane vicine.",
       },
       en: {
         kicker: "Tosca Bistrot · The cellar",
         title: "Wine<br><em>list.</em>",
-        description: "A selection designed for fresh pasta, seafood and Ligurian cuisine, with room for Riviera whites and national labels.",
+        description: "The wine list highlights local Cinque Terre producers and is completed by small family wineries from nearby Italian regions.",
       },
     },
     sections: [
       {
-        it: "Bollicine", en: "Sparkling",
+        it: "Cinque Terre", en: "Cinque Terre",
         items: [
-          { it: "Prosecco e bollicine per aperitivo", en: "Prosecco and sparkling wines for aperitif" },
-          { it: "Metodo classico italiano", en: "Italian traditional method" },
-          { it: "Cuvée speciali secondo disponibilità", en: "Special cuvees according to availability" },
+          { it: "Produttori locali e vini del territorio", en: "Local producers and wines from the area" },
+          { it: "Etichette autentiche legate alla costa ligure", en: "Authentic labels connected to the Ligurian coast" },
+          { it: "Bianchi minerali per pasta fresca e pesce", en: "Mineral whites for fresh pasta and seafood" },
         ],
       },
       {
-        it: "Bianchi e rosati", en: "Whites and roses",
+        it: "Piccole aziende", en: "Small wineries",
         items: [
-          { it: "Vermentino, Pigato e vini della Riviera", en: "Vermentino, Pigato and Riviera wines" },
-          { it: "Bianchi italiani per piatti di mare", en: "Italian whites for seafood dishes" },
-          { it: "Rosati freschi e gastronomici", en: "Fresh gastronomic rose wines" },
+          { it: "Selezione di cantine familiari italiane", en: "Selection of Italian family wineries" },
+          { it: "Etichette delle regioni vicine", en: "Labels from nearby regions" },
+          { it: "Vini gastronomici scelti per il menù", en: "Food-friendly wines chosen for the menu" },
         ],
       },
       {
-        it: "Rossi e fine pasto", en: "Reds and after dinner",
+        it: "Fine pasto", en: "After dinner",
         items: [
-          { it: "Rossi italiani per cucina ligure e piatti di mare", en: "Italian reds for Ligurian cuisine and seafood dishes" },
+          { it: "Sciacchetrà e vini dolci secondo disponibilità", en: "Sciacchetrà and dessert wines according to availability" },
           { it: "Amari e distillati", en: "Bitters and spirits" },
-          { it: "Cocktail classici", en: "Classic cocktails" },
+          { it: "Chiedi il suggerimento del giorno", en: "Ask for today's recommendation" },
         ],
       },
     ],
@@ -454,7 +483,11 @@ const renderCatalog = () => {
           <article class="catalog-item">
             <div>
               <h4>${item[currentLanguage] || item.it}</h4>
-              ${(item.sub || item[currentLanguage === "it" ? "en" : "it"]) ? `<p>${item.sub || item[currentLanguage === "it" ? "en" : "it"]}</p>` : ""}
+              ${(() => {
+                const alternateLanguage = currentLanguage === "it" ? "en" : "it";
+                const itemDescription = item[currentLanguage === "it" ? "subIt" : "subEn"] || item.sub || item[alternateLanguage];
+                return itemDescription ? `<p>${itemDescription}</p>` : "";
+              })()}
             </div>
             ${item.price ? `<span>${item.price}</span>` : ""}
           </article>

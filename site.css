@@ -4551,3 +4551,50 @@ body {
     font-size: 1.48rem;
   }
 }
+
+/* Real Tosca logo image */
+.brand-logo-image {
+  display: inline-flex !important;
+  width: auto !important;
+  min-width: 0 !important;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.brand-logo-image .brand-logo-img {
+  display: block;
+  aspect-ratio: 1 / 1;
+  width: auto;
+  height: 100%;
+  max-width: none;
+  border: 1px solid rgba(255, 253, 248, 0.22);
+  border-radius: 50%;
+  background: #541419;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0.45rem 1.4rem rgba(0, 0, 0, 0.24);
+}
+
+.site-header .brand-logo-image {
+  height: clamp(3.25rem, 4.4vw, 4.6rem) !important;
+}
+
+.card-header .brand-logo-image {
+  height: clamp(3.8rem, 5.4vw, 5.1rem) !important;
+}
+
+.card-header .brand-logo-image .brand-logo-img {
+  border-color: rgba(10, 18, 15, 0.18);
+  box-shadow: 0 0.45rem 1.35rem rgba(10, 18, 15, 0.12);
+}
+
+@media (max-width: 760px) {
+  .site-header .brand-logo-image {
+    height: 2.7rem !important;
+  }
+
+  .card-header .brand-logo-image {
+    height: 3.2rem !important;
+  }
+}
