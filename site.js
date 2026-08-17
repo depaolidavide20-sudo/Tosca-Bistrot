@@ -4,7 +4,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuPanel = mobileMenu?.querySelector(".menu-panel");
 const mobileLinks = mobileMenu?.querySelectorAll("a[href^='#']") ?? [];
-const whatsappNumber = "390187817128";
+const whatsappNumber = "393495591277";
 const focusableSelector = "a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex='-1'])";
 const backgroundRegions = [document.querySelector("main"), document.querySelector(".site-footer")].filter(Boolean);
 let lastFocusedElement = null;
